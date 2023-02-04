@@ -1,0 +1,82 @@
+body{
+  font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+li {
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 2vw;
+}
+li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.colapsible{
+  overflow: hidden;
+}
+
+.colapsible label {
+  display: block;
+  cursor: pointer;
+
+}
+
+.colapsible input {
+  display: none;
+}
+
+.colapsible label:hover {
+  text-decoration: underline;
+}
+input:checked ~ .colapsible label{
+  background-color: rgb(171, 170, 170) ;
+}
+.colapsible label:after {
+  content: "";
+  background-color: rgb(185, 185, 185);
+  position: absolute;
+
+}
+.collapsible-text {
+  position: fixed;
+  display: none;
+  overflow: hidden;
+  border-radius: 4px;
+  top:-100%;
+  opacity:0.5;
+  transition: all 0.3s ease;
+}
+
+.collapsible-text p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+input:checked ~ .collapsible-text {
+  padding: 10px;
+  background-color: rgb(171, 170, 170);
+  display: inline-block;
+  opacity: 1;
+  margin-top: 14vh;
+  top: 0;
+}
+
+.right {
+  margin-left: 7vw;
+  margin-top: 16px;
+}
+
+.btn:hover{
+  cursor: pointer;
+  background-color: #02345b;
+}
+.grr:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.card {
+  transform: scale(0.9);
+}
