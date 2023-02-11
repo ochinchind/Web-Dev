@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="1.js"></script>
+    <title>todo-list</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        font-family: "Fira sans", sans-serif;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      header {
+        padding: 2rem 1rem;
+        margin-left: 25vw;
+      }
+      header #todo-list {
+        margin-left: 10vw;
+        margin-top: 2vh;
+      }
+
+      #newtask {
+        width: 40vw;
+        height: 5vh;
+        border-radius: 10px;
+        padding: 8px;
+      }
+      #newtasksubmit {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: medium;
+        height: 5vh;
+        border: 1px;
+        border-radius: 3px;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: pink;
+        background-image: linear-gradient(to right, pink, purple);
+      }
+      #newtasksubmit:hover {
+        cursor: pointer;
+        color: #fff;
+        background-image: linear-gradient(to right, pink, purple);
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: #fff;
+      }
+      main {
+        text-align: center;
+        justify-content: center;
+        display: grid;
+      }
+      .task {
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+      }
+      .actions {
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+      }
+      .text {
+        width: 40vw;
+        height: 5vh;
+        border-radius: 10px;
+        padding: 8px;
+      }
+      .text:read-only {
+        border: none;
+      }
+      #tasks {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>ToDo List</h1>
+      <div id="todo-list">
+        <form id="todo-form">
+          <input type="text" id="newtask" placeholder="New Task" />
+          <input type="submit" value="Add task" id="newtasksubmit" />
+        </form>
+      </div>
+    </header>
+    <main>
+      <section class="tasklist">
+        <div id="tasks">
+          <!-- 
+
+            <div class="task">
+            <div class="check">
+              <input type="checkbox" class="checkbox">
+            </div>
+            <div class="content">
+              <input type="text" class="text" value="My task" readonly />
+            </div>
+            <div class="actions">
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
