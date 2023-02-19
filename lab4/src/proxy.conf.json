@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+        "target": "https://kaspi.kz/shop/c/smartphones/class-apple/",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}
