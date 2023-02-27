@@ -1,0 +1,16 @@
+  <h2>Products</h2>
+  <div *ngFor="let product of productss">
+  <button type="button" (click)="onSelect(product)"> {{product[0].title.trim().split(' ')[0]}}</button>
+  </div>
+  <div *ngIf="selectedProduct"> 
+    <app-product-item [products]="selectedProduct">
+
+    </app-product-item>
+  </div>
+
+    <script src="./index.ts"></script>
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
