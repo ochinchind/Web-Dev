@@ -1,0 +1,12 @@
+<p>company works!</p>
+<div style="display: flex; flex-direction: column;">
+    <div *ngFor="let item of companies" style="">
+        <div> id: {{item.id}} </div>
+        <div> description: <a [routerLink]="['/companies', item.id, 'vacancies']">{{item.name}}</a> </div>
+        <div> city: {{item.city}} </div>
+        <div> address: {{item.address}} </div>
+
+        <hr>
+    
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<p>vacancies-of-company works!</p>
+<div style="display: flex; flex-direction: column;">
+    <div *ngFor="let item of vacancies" style="">
+        <div> id: {{item.id}} </div>
+        <div> description: {{item.name}} </div>
+        <div> salary: {{item.salary}} </div>
+        <div> company: {{item.company}} </div>
+
+        <hr>
+    
+    </div>
+</div>
